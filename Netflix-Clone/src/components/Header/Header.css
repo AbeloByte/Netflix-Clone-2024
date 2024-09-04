@@ -1,0 +1,48 @@
+.logoimage{
+  width:200px;
+}
+
+
+.NavigationBar_Container{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  position: sticky;
+  
+  background-color: rgb(20, 20, 20);
+  /* background-color:transparent; */
+  height: 10vh;
+  color: #fff;
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
+  z-index: 1;
+}
+
+
+.Header-Container{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li{
+  list-style: none;
+}
+
+
+.leftSide-Container ul{
+  width: 140%;
+  display: flex;
+  justify-content: space-between;
+  /* gap:32px ; */
+  align-items: center;
+}
+.RightSide-Container ul{
+  width: 150%;
+  display: flex;
+  justify-content: space-between;
+  /* gap:32px ; */
+  align-items: center;
+}
+
+
