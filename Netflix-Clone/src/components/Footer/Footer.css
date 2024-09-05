@@ -1,0 +1,55 @@
+.footer_outer_container {
+    background-color: #141414;
+    padding: 40px 20px;
+    color: #757575;
+    font-size: 14px;
+  }
+  
+  .footer_inner_container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .footer_icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center;
+    margin-bottom: 20px; /* Space between icons and the list below */
+  }
+  
+  .footer_icons > * {
+    margin: 0 10px; /* Space between each icon */
+    color: #757575;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer_icons > *:hover {
+    color: #ffffff;
+  }
+  
+  .footer_inner_container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer_inner_container ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer_lists {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .Service_Code {
+    text-align: center;
+  }
+  
+  .Service_Code p {
+    margin: 20px 0 0;
+    font-size: 14px;
+    color: #757575;
+  }
+  
