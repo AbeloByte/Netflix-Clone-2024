@@ -1,4 +1,4 @@
-const Api_key = import.meta.env.VITE_API_KEY
+const Api_key = import.meta.env.VITE_TMDB_KEY
 
 
 

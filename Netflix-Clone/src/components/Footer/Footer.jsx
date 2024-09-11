@@ -46,8 +46,8 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className='service_code'>
-          <p>
+        <div className='border border-[#B8252E] service_code'>
+          <p className="">
             Service Code
           </p>
         </div>

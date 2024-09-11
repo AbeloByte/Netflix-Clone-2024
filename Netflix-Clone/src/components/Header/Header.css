@@ -1,48 +1,103 @@
-.logoimage{
-  width:100px;
+
+.logoimage {
+  width: 100px;
 }
 
-
-.NavigationBar_Container{
+.NavigationBar_Container {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   position: sticky;
-  
   background-color: rgb(20, 20, 20);
-  /* background-color:transparent; */
   height: 10vh;
   color: #fff;
-  transition: all 0.5s;
-  transition-timing-function: ease-in;
+  transition: all 0.5s ease-in;
   z-index: 1;
 }
 
-
-.Header-Container{
+.Header-Container {
   width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-ul li{
+
+ul li {
   list-style: none;
 }
 
+/* Default styles for larger screens */
+.leftSide-Container ul,
+.RightSide-Container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-.leftSide-Container ul{
+}
+.leftSide-Container ul li:hover {
+  cursor: pointer;
+}
+
+.leftSide-Container ul {
   width: 140%;
-  display: flex;
-  justify-content: space-between;
-  /* gap:32px ; */
-  align-items: center;
 }
-.RightSide-Container ul{
+
+.RightSide-Container ul {
   width: 150%;
-  display: flex;
-  justify-content: space-between;
-  /* gap:32px ; */
-  align-items: center;
+
 }
 
 
+
+/* Menu Toggle Button for small screens */
+.menu-toggle-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media screen and (max-width: 768px) {
+  .Header-Container {
+    width: 95%;
+  }
+
+  .menu-toggle-btn {
+    display: block; /* Show the button on smaller screens */
+  }
+
+  /* Hide the menu by default on small screens */
+  .leftSide-Container ul,
+  .RightSide-Container ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(20, 20, 20);
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+  }
+
+  /* Display the menu when it's toggled open */
+  .menu-open {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  
+  }
+}
+
+/* Extra small devices (phones) */
+@media screen and (max-width: 480px) {
+  .logoimage {
+    width: 60px;
+  }
+
+  ul li {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+}
