@@ -6,7 +6,7 @@ const Api_key = import.meta.env.VITE_TMDB_KEY
 const requests = {
     fetchTrending: `/trending/all/week?api_key=${Api_key}&language=en-US`,
     fetchNetflixOriginals: `/discover/tv?api_key=${Api_key}&with_networks=213`,
-    fetchTopRated: `/movie/top_rated?api_key=${Api_key}&language=en-US`,
+    fetchTopRatedMovies: `/movie/top_rated?api_key=${Api_key}&language=en-US`,
     fetchActionMovies: `/discover/movie?api_key=${Api_key}&with_genres=28`,
     fetchComedyMovies: `/discover/movie?api_key=${Api_key}&with_genres=35`,
     fetchHorrorMovies: `/discover/movie?api_key=${Api_key}&with_genres=27`,
