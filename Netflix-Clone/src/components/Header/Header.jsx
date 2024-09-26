@@ -9,51 +9,45 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import MenuIcon from '@mui/icons-material/Menu';
 
 function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Start with menu closed
 
-//   const toggleMenu = () => {
-//     setIsMenuOpen(!isMenuOpen);
-//   };
 const toggleMenu = () => {
-  console.log('Menu open state:', isMenuOpen); // Debugging line
   setIsMenuOpen(!isMenuOpen);
 };
 
+
   return (
-    <>
-      <nav className="NavigationBar_Container ">
-        <div className="Header-Container">
-          <div className="leftSide-Container ">
-            <ul className={isMenuOpen ? 'menu-open' : ''} >
-              <li className="logo">
-                <img className="logoimage" src={Netflix_Logo} alt="Netflix Logo" />
-              </li>
-              <li>Home</li>
-              <li>Tvshow</li>
-              <li>Movies</li>
-              <li>New & Popular</li>
-              <li>My List</li>
-              <li>Browse By Language</li>
-            </ul>
-          </div>
-
-          <div className="RightSide-Container">
-            <ul className={`rightSide-Container ${isMenuOpen ? 'menu-open' : ''}`}>
-              <li className='hover:cursor-pointer'><SearchIcon /></li>
-              <li  className='hover:cursor-pointer'><NotificationsNoneIcon /></li>
-              <li  className='hover:cursor-pointer'><AccountBoxIcon /></li>
-              <li  className='hover:cursor-pointer'><ArrowDropDownIcon /></li>
-            </ul>
-          </div>
-
-
-          {/* Menu Toggle Button */}
-          <button className="menu-toggle-btn" onClick={toggleMenu}>
-            <MenuIcon />
-          </button>
+    <nav className="NavigationBar_Container">
+      <div className="Header-Container">
+        <div className="leftSide-Container">
+          <ul className={`menu ${isMenuOpen ? 'menu-open' : ''}`}>
+            <li className="logo">
+              <img className="logoimage" src={Netflix_Logo} alt="Netflix Logo" />
+            </li>
+            <li>Home</li>
+            <li>Tvshow</li>
+            <li>Movies</li>
+            <li>New & Popular</li>
+            <li>My List</li>
+            <li>Browse By Language</li>
+          </ul>
         </div>
-      </nav>
-    </>
+
+        <div className="RightSide-Container">
+          <ul className={`rightSide-Container ${isMenuOpen ? 'menu-open' : ''}`}>
+            <li className='hover:cursor-pointer'><SearchIcon /></li>
+            <li className='hover:cursor-pointer'><NotificationsNoneIcon /></li>
+            <li className='hover:cursor-pointer'><AccountBoxIcon /></li>
+            <li className='hover:cursor-pointer'><ArrowDropDownIcon /></li>
+          </ul>
+        </div>
+
+        {/* Menu Toggle Button */}
+        <button className="menu-toggle-btn" onClick={toggleMenu}>
+          <MenuIcon />
+        </button>
+      </div>
+    </nav>
   );
 }
 

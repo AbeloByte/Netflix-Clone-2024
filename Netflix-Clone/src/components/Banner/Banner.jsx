@@ -17,7 +17,7 @@ function Banner() {
       // Pick a random movie and set it to state
       setMovie(request.data.results[Math.floor(Math.random() * request.data.results.length)]);
         
-      console.log(request);
+      // console.log(request);
       }
       // Catch errors if any are thrown 
       catch(error){
