@@ -9,9 +9,6 @@ The Netflix Clone is designed to mimic the look and feel of the original platfor
 ![UI Screenshot](src/assets/NetflixClone.png)  
 
 ### Key Features
-
-- **Dynamic Navigation**: 
-  - A toggleable menu allows for easy navigation, giving users quick access to different sections without cluttering the interface. 📱
   
 - **Interactive User Interface**: 
   - Built with React, the interface is designed for interactivity, providing users with a smooth experience when browsing content. ⚡
