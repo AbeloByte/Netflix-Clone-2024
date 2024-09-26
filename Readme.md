@@ -4,9 +4,10 @@ This project is a clone of the Netflix website, created using **React** and **Vi
 
 ## Project Overview
 
-The Netflix Clone is designed to mimic the look and feel of the original platform. It features a clean, user-friendly interface that allows users to navigate through a variety of movies and TV shows, providing a seamless browsing experience. 🌟
+The Netflix Clone is designed to mimic the look and feel of the original platform. It features a clean, user-friendly interface that allows users to navigate through a variety of movies and TV shows, providing a seamless browsing experience and you when you try to click each poster it will show you the Trailer. 🌟
 
-![UI Screenshot](assets/screenshot.png)  
+![UI Screenshot](Netflix-Clone/src/assets
+/NetflixClone.png)  
 
 ### Key Features
 
