@@ -17,7 +17,7 @@
 	font-weight: 800;
 	padding-bottom: 0.3rem;
 }
-.banner__description {
+.banner__description {  
 	width: 45rem;
 	line-height: 1;
 	padding: 1rem 0;
@@ -76,11 +76,15 @@
 
 /* Keyframe animation for color cycling */
 @keyframes colorCycle {
+
     0% { border-color: rgba(255, 0, 0, 1); }   
     25% { border-color: rgba(0, 255, 0, 1); }  
     50% { border-color: rgba(0, 0, 255, 1); }  
-    75% { border-color: rgba(255, 255, 0, 1); }
+    75% { border-color: rgb(202, 202, 13); }
+    90% { border-color: rgb(255, 255, 255); }
     100% { border-color: rgba(255, 0, 0, 1); } 
+
+
 }
 
 .banner__button.info {
@@ -89,7 +93,7 @@
     border-radius: 4px;
     border: 2px solid rgba(255, 255, 255, 0.8); /* Initial border color */
 
-    background-color: transparent; /* Transparent background */
+    /* background-color: transparent; Transparent background */
     transition: background-color 0.2s ease;
     animation: colorCycle 4s linear infinite; 
 }
